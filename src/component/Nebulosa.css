@@ -1,0 +1,14 @@
+.mesh-overlay {
+  position: absolute;
+  bottom: -1100px;
+  left: 0;
+  right: 0;
+  background:
+              radial-gradient(circle at 70% 60%, #4a2265, transparent 50%);
+  filter: blur(100px) contrast(110%);
+  opacity: 0.8;
+  z-index: 1;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}

@@ -27,7 +27,6 @@ function ProjectHeader({ imageSrc, title, description }) {
 }
 
 function ProjectButtons({ demoLink, codeLink }) {
-    // Función para manejar el redireccionamiento
     const handleClick = (url) => {
       window.open(url, '_blank');
     };
@@ -75,10 +74,8 @@ function ProjectButtons({ demoLink, codeLink }) {
         </button>
       </div>
     );
-  }
-  
+}
 
-// Componente de lenguajes de programación
 function ProjectLanguages({ languages }) {
     return (
       <div className="grid grid-cols-5 gap-2 m-2">
@@ -92,19 +89,18 @@ function ProjectLanguages({ languages }) {
         ))}
       </div>
     );
-  }
+}
 
-// Componente principal del proyecto
 function ContainerProject({
     imageSrc,
     title,
     description,
     languages,
-    demoLink,  // Se pasan las URL de Demo y View Code
+    demoLink,
     codeLink,
   }) {
     return (
-      <div className="bg-white w-120 h-auto rounded-lg group transition-all duration-300">
+      <div className="bg-white w-120 h-auto rounded-lg group transition-all duration-300 relative z-[10]"> {/* Added z-index here */}
         <div className="flex p-2 gap-1">
           <div>
             <span className="bg-blue-500 inline-block center w-3 h-3 rounded-full"></span>
@@ -117,14 +113,12 @@ function ContainerProject({
           </div>
         </div>
   
-        {/* Componente de Header, Buttons y Languages */}
         <ProjectHeader imageSrc={imageSrc} title={title} description={description} />
         <ProjectButtons demoLink={demoLink} codeLink={codeLink} />
         <ProjectLanguages languages={languages} />
       </div>
     );
-  }
-  
+}
 
 function Projects() {
     const projectData = [
@@ -141,7 +135,7 @@ function Projects() {
         title: "TattooSIZER",
         description: "Redimensionamiento de imágenes",
         languages: ["JS", "HTML", "CSS"],
-        demoLink: "http://tattosizer.netlify.app",  // Aquí se agregan los enlaces
+        demoLink: "http://tattosizer.netlify.app",
         codeLink: "https://github.com/Ferchoch0/tatoosizer"
       },
       {
@@ -149,7 +143,7 @@ function Projects() {
         title: "Ta-Te-Ti",
         description: "Diseño de un juego",
         languages: ["React", "JS", "CSS"],
-        demoLink: "http://tateti.kesug.com/",  // Aquí se agregan los enlaces
+        demoLink: "http://tateti.kesug.com/",
         codeLink: "https://github.com/Ferchoch0/tic-tac-toe"
       },
       {
@@ -157,18 +151,18 @@ function Projects() {
           title: "Sassa - Financial App",
           description: "landing pages",
           languages: ["Wordpress", "Elementor", "Mysql"],
-          demoLink: "https://github.com/Ferchoch0/sassa---financial-app",  // Aquí se agregan los enlaces
-          codeLink: "hhttps://github.com/Ferchoch0/sassa---financial-app"
+          demoLink: "https://github.com/Ferchoch0/sassa---financial-app",
+          codeLink: "https://github.com/Ferchoch0/sassa---financial-app"
       },
     ];
   
     return (
-      <section className="flex flex-col items-center justify-center w-full h-full bg-black text-white">
+      <section className="flex flex-col items-center justify-center w-full h-full text-white relative z-[20]"> {/* Added z-index here */}
           <div className="flex flex-col items-center justify-center w-full h-full pt-10">
               <h1 className="text-4xl font-bold">Proyectos</h1>
               <p className="text-lg text-gray-400">Aquí hay algunos de los proyectos en los que trabaje</p>
           </div>
-          <div className="min-h-screen grid grid-cols-3 gap-6 pt-10 bg-black text-white place-items-center">
+          <div className="min-h-screen grid grid-cols-3 gap-6 pt-10 text-white mb-10 place-items-center">
               {projectData.map((project, index) => (
                   <ContainerProject
                   key={index}
@@ -183,8 +177,6 @@ function Projects() {
           </div>
       </section>
     );
-  }
-  
-export { Projects, ContainerProject };
-  
+}
 
+export { Projects, ContainerProject };

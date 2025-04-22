@@ -36,7 +36,7 @@ function IconButton({ onClick, href, icon: Icon, label = "", className = "" }) {
 
 function MouseScroll() {
   return (
-    <section className="fixed bottom-8 left-1/2 transform -translate-x-1/2 flex justify-center items-center">
+    <section className="flex bottom-8 justify-center items-center">
       <div className="flex flex-col items-center relative">
         <CiDesktopMouse2 className="text-[#eeccff] text-6xl mb-2" />
         <div className="wheel-container absolute bottom-0 flex justify-center items-center animate-scroll">
@@ -67,7 +67,7 @@ function BlackHole() {
 
 function Hero() {
   return (
-    <section className="relative flex min-h-screen w-full bg-black">
+    <section className="relative flex min-h-screen w-full">
       <BlackHole />
       
       <div className="relative z-[10] flex flex-row justify-center items-center w-full gap-6 text-[#eeccff]">
@@ -90,11 +90,6 @@ function Hero() {
             <IconButton href="https://www.linkedin.com/in/fernando-d-delvalle/" icon={FaLinkedin} label="Linkedin" />
           </div>
         </div>
-
-      </div>
-
-      <div className="relative z-[10]">
-        <MouseScroll />
       </div>
     </section>
   );
