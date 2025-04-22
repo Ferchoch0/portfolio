@@ -14,7 +14,7 @@ function ProjectHeader({ imageSrc, title, description }) {
 
       <div className="flex m-2 gap-2">
         <div className="w-10 h-10 rounded-md overflow-hidden">
-          <LuCodesandbox className="w-10 h-10" />
+          <img src="/logo.png" className="w-10 h-10" />
         </div>
 
         <div className="flex flex-col justify-center">

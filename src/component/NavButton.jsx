@@ -1,6 +1,5 @@
 import React from "react";
 import { CgUserList } from "react-icons/cg";
-import { GrCodeSandbox } from "react-icons/gr";
 
 function IconButton({ className, children }) {
   return (
@@ -22,7 +21,7 @@ function ButtonGroup() {
       {/* Texto de la izquierda */}
       <div className="flex items-center justify-center p-4">
         <h1 className="text-white text-4xl font-bold flex items-center space-x-2">
-          <GrCodeSandbox className="text-2xl text-[#b97aff]" />
+          <img src="/logo.png" className="w-[35px] h-[35px] text-[#b97aff]" />
           <span className="text-[#b97aff] text-2xl">&#123;</span>
           <span className="text-2xl">FD</span>
           <span className="text-[#b97aff] text-2xl">&#125;</span>
@@ -63,7 +62,7 @@ function ButtonGroup() {
       {/* Texto de la derecha */}
       <div className="flex items-center justify-center p-4 invisible">
         <h1 className="text-white text-4xl font-bold flex items-center space-x-2">
-          <GrCodeSandbox className="text-2xl text-[#b97aff]" />
+          <img src="/logo.png" className="w-[35px] h-[35px] text-[#b97aff]" />
           <span className="text-[#b97aff] text-2xl">&#123;</span>
           <span className="text-2xl">FD</span>
           <span className="text-[#b97aff] text-2xl">&#125;</span>
