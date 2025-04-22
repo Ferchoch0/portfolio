@@ -1,0 +1,39 @@
+.wheel-container {
+    position: absolute;
+    bottom: 48px; /* Ajusta según necesites */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  canvas {
+    border-radius: 1rem;
+  }
+  
+  /* Estilo de la rueda del mouse */
+  .wheel {
+    width: 4px;
+    height: 8px;
+    background-color: #250b1e;
+    border-radius: 50%;
+    position: relative;
+    animation: animate-scroll 1.2s infinite linear;
+  }
+
+  .hero-background{
+    background: linear-gradient(to bottom, #020112, #01000d);
+  }
+  
+  /* Animación de rebote para simular el movimiento del mouse */
+  @keyframes animate-scroll {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(8px);
+    }
+    100% {
+      opacity: 0;
+    }
+  }

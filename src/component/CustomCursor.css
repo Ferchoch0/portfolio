@@ -1,0 +1,28 @@
+.cursor {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    background: #4e243e;
+    opacity: 0.6;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px #9c7ea0, 0 0 20px #9c7ea0, 0 0 30px #9c7ea0;
+    animation: cursorPulse 5s infinite;
+  }
+  
+  @keyframes cursorPulse {
+    0% {
+      box-shadow: 0 0 10px #e2dbe2, 0 0 20px #e2dbe2, 0 0 30px #e2dbe2;
+    }
+    50% {
+      box-shadow: 0 0 20px #4e243e, 0 0 30px #4e243e, 0 0 40px #4e243e;
+    }
+    100% {
+      box-shadow: 0 0 10px #e2dbe2, 0 0 20px #e2dbe2, 0 0 30px #e2dbe2;
+    }
+  }
+  

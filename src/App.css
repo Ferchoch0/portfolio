@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+::selection {
+    background-color: #4e243e; /* Cambia esto por el color que desees */
+    color: black; /* Cambia el color del texto cuando esté seleccionado */
+  }
+  
