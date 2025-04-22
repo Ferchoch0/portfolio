@@ -8,6 +8,7 @@ import { AboutMe } from './component/AboutMeSection';
 import { Projects } from './component/ProjectsSesion';
 import CustomCursor from './component/CustomCursor';
 import Footer from "./component/Footer";
+import SkillSection from './component/SkillsSection';
 
 function App() {
   return (
@@ -23,8 +24,9 @@ function App() {
       </div>
       <div>
         <AboutMe/>
+        <SkillSection />
         <Projects />
-        <div class="mesh-overlay"></div>
+        <div className="mesh-overlay"></div>
       </div>
     
       <Footer />      
