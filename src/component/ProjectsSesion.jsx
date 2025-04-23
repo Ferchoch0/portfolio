@@ -162,7 +162,7 @@ function Projects() {
               <h1 className="text-4xl font-bold">Proyectos</h1>
               <p className="text-lg text-gray-400">Aquí hay algunos de los proyectos en los que trabaje</p>
           </div>
-          <div className="min-h-screen grid grid-cols-3 gap-6 pt-10 text-white mb-10 place-items-center">
+          <div className="min-h-screen grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-6 pt-10 text-white mb-10 place-items-center">
               {projectData.map((project, index) => (
                   <ContainerProject
                   key={index}

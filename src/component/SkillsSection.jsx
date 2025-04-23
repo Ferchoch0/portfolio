@@ -126,9 +126,14 @@ function CodeTable() {
 
 function SkillSection(){
     return(
-        <section className="flex items-center justify-center gap-30 text-white">
+        <section className="flex items-center flex-col justify-center gap-10 xl:gap-20 2xl:gap-30 text-white">
+          <div className="flex flex-col items-center justify-center w-full h-full pt-10">
+              <h1 className="text-4xl font-bold">Habilidades</h1>
+          </div>
+          <div className="flex items-center justify-center gap-10">
             <CodeTable />
             <SkillTable categories={categories} />
+          </div>   
         </section>
     );
 };
