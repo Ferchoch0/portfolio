@@ -49,7 +49,7 @@ function MouseScroll() {
 
 function BlackHole() {
   return (
-    <div className="absolute top-[-580px] left-0 w-full h-[calc(100vh+340px)] z-[1] overflow-hidden">
+    <div className="absolute top-[-465px] left-0 w-full h-[calc(100vh+340px)] xl:top-[-455px] 2xl:top-[-580px] z-[1] overflow-hidden">
       <video 
         autoPlay 
         muted 
@@ -72,16 +72,16 @@ function Hero() {
       
       <div className="relative z-[10] flex flex-row justify-center items-center w-full gap-6 text-[#eeccff]">
 
-        <div className="w-1/3 flex justify-center items-center">
+        <div className="w-1/2  xl:w-1/3 2xl:w-1/3 flex justify-center items-center">
           <Code />
         </div>
 
         <div className="flex flex-col justify-center items-start text-start">
-          <h4 className="text-xl md:text-lg font-bold mb-4">Hola, yo soy</h4>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+          <h4 className="text-xl md:text-sm xl:text-lg font-bold mb-4">Hola, me llamo</h4>
+          <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-4">
             Delvalle Fernando
           </h1>
-          <h2 className="text-xl md:text-3xl text-[#b97aff] tracking-widest">
+          <h2 className="text-xl md:text-2xl xl:text-3xl text-[#b97aff] tracking-widest">
             FULLSTACK DEVELOPER
           </h2>
 

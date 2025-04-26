@@ -39,7 +39,7 @@ const categories = {
 
 function SkillTable({ categories }) {
   return (
-    <div className="w-auto p-4 text-white bg-[#181818] rounded-lg shadow-md">
+    <div className="w-[50%] xl:w-auto p-4 text-white bg-[#181818] rounded-lg shadow-md">
       {Object.entries(categories).map(([category, skills]) => (
         <div key={category} className="mb-6">
           <h3 className="text-lg font-semibold text-violet-300 mb-2">{category}</h3>

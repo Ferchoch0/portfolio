@@ -100,7 +100,7 @@ function ContainerProject({
     codeLink,
   }) {
     return (
-      <div className="bg-white w-120 h-auto rounded-lg group transition-all duration-300 relative z-[10]"> {/* Added z-index here */}
+      <div className="bg-white w-120 h-auto rounded-lg group transition-all duration-300 relative z-[10]">
         <div className="flex p-2 gap-1">
           <div>
             <span className="bg-blue-500 inline-block center w-3 h-3 rounded-full"></span>

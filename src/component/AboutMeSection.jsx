@@ -9,12 +9,12 @@ function DetailsCard({ icon: Icon ,title, description }) {
             <div className="p-1 rounded-md flex justify-center items-center bg-gradient-to-br from-[#d896ff] to-[#7f2dff]">
                 {Icon && (
                     <Icon
-                        className="w-5 h-5 text-black"
+                        className="w-4 h-4 xl:w-5 xl:h-5 text-black"
                     />
                 )}
             </div>
-            <h2 className="text-3xl font-bold text-white">{title}</h2>
-            <p className="text-lg text-gray-400">{description}</p>
+            <h2 className="text-xl xl:text-3xl font-bold text-white">{title}</h2>
+            <p className="text-base xl:text-lg text-gray-400">{description}</p>
         </div>
     );
 }
@@ -22,7 +22,7 @@ function DetailsCard({ icon: Icon ,title, description }) {
 function Details(){
     return(
         <div className="flex flex-col justify-center items-center w-full min-h-screen p-6 text-white relative z-[10]"> {/* Added z-index */}
-            <div className="flex h-[300px] w-[70%] border-[1px] border-[#d896ff] rounded-md gap-4 p-4 backdrop-blur-md">
+            <div className="flex h-[300px] w-[75%]  xl:w-[70%] border-[1px] border-[#d896ff] rounded-md gap-4 p-4 backdrop-blur-md">
                 <DetailsCard 
                     icon={FaCode}
                     title={"FullStack"}
