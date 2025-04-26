@@ -1,5 +1,5 @@
 import React from "react";
-import { CgUserList } from "react-icons/cg";
+import {CgEye, CgUserList, CgBrowser, CgFolder} from "react-icons/cg";
 
 function IconButton({ className, children }) {
   return (
@@ -30,33 +30,41 @@ function ButtonGroup() {
 
       {/* Menú central */}
       <div className="flex items-center justify-between bg-black/30 backdrop-blur-md rounded-full px-6 py-3 shadow-lg transition-all duration-300 hover:shadow-xl hover:bg-black/40 z-50">
+        <a href="#home">
         <IconButton className="text-white hover:text-[#b97aff] hover:scale-110">
           <div className="flex items-center space-x-2">
-            <CgUserList />
+            <CgEye />
             <NameSection>Principal</NameSection>
           </div>
         </IconButton>
+        </a>
 
+        <a href="#about">
         <IconButton className="text-white hover:text-[#b97aff] hover:scale-110">
           <div className="flex items-center space-x-2">
             <CgUserList />
             <NameSection>Sobre Mi</NameSection>
           </div>
         </IconButton>
-        
-        <IconButton className="text-white hover:text-[#b97aff] hover:scale-110">
-          <div className="flex items-center space-x-2">
-            <CgUserList />
-            <NameSection>Projectos</NameSection>
-          </div>
-        </IconButton>
+        </a>
 
+        <a href="#skills">
         <IconButton className="text-white hover:text-[#b97aff] hover:scale-110">
           <div className="flex items-center space-x-2">
-            <CgUserList />
-            <NameSection>Contactame</NameSection>
+            <CgBrowser />
+            <NameSection>Skills</NameSection>
           </div>
         </IconButton>
+        </a>
+
+        <a href="#projects">
+        <IconButton className="text-white hover:text-[#b97aff] hover:scale-110">
+          <div className="flex items-center space-x-2">
+            <CgFolder />
+            <NameSection>Proyectos</NameSection>
+          </div>
+        </IconButton>
+        </a>
       </div>
 
       {/* Texto de la derecha */}

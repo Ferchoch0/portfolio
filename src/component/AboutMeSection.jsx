@@ -54,7 +54,7 @@ function Details(){
 
 function AboutMe(){
     return(
-        <section className="min-h-screen flex justify-between pt-10 text-white relative z-[20]"> {/* Added z-index */}
+        <section id="about" className="snap-start min-h-screen flex justify-between pt-10 text-white relative z-[20]"> {/* Added z-index */}
             <Details />
         </section>
     );

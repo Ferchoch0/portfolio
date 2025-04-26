@@ -2,6 +2,7 @@ import React from "react";
 import './HeroSection.css'
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { TbFileCv } from "react-icons/tb";
 import { CiDesktopMouse2 } from "react-icons/ci";
 import { Code } from './Code';
 
@@ -67,7 +68,7 @@ function BlackHole() {
 
 function Hero() {
   return (
-    <section className="relative flex min-h-screen w-full">
+    <section id="home" className="snap-start relative flex min-h-screen w-full">
       <BlackHole />
       
       <div className="relative z-[10] flex flex-row justify-center items-center w-full gap-6 text-[#eeccff]">
@@ -88,6 +89,9 @@ function Hero() {
           <div className="flex gap-4 mt-6">
             <IconButton href="https://github.com/Ferchoch0" icon={FaGithub} label="GitHub" />
             <IconButton href="https://www.linkedin.com/in/fernando-d-delvalle/" icon={FaLinkedin} label="Linkedin" />
+            <IconButton href="/Curriculum-fd.pdf" icon={TbFileCv} label="Curriculum" />
+            
+
           </div>
         </div>
       </div>

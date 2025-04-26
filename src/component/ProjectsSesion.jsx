@@ -157,7 +157,7 @@ function Projects() {
     ];
   
     return (
-      <section className="flex flex-col items-center justify-center w-full h-full text-white relative z-[20]"> {/* Added z-index here */}
+      <section id="projects" className="snap-start flex flex-col items-center justify-center w-full h-full text-white relative z-[20]"> {/* Added z-index here */}
           <div className="flex flex-col items-center justify-center w-full h-full pt-10">
               <h1 className="text-4xl font-bold">Proyectos</h1>
               <p className="text-lg text-gray-400">Aquí hay algunos de los proyectos en los que trabaje</p>
