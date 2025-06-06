@@ -16,7 +16,7 @@ function App() {
      
       <CustomCursor />
       <ButtonGroup />
-      <div className='flex flex-col h-[650px] 2xl:h-[850px] gap-20'>
+      <div className='flex flex-col h-[650px] 2xl:h-[950px] gap-20'>
         <Hero />
       </div>
       <div className="relative z-[10]">

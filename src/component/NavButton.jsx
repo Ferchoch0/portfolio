@@ -29,7 +29,7 @@ function ButtonGroup() {
       </div>
 
       {/* Menú central */}
-      <div className="flex items-center justify-between bg-black/30 backdrop-blur-md rounded-full px-6 py-3 shadow-lg transition-all duration-300 hover:shadow-xl hover:bg-black/40 z-50">
+      <div className="hidden md:flex items-center justify-between bg-black/30 backdrop-blur-md rounded-full px-6 py-3 shadow-lg transition-all duration-300 hover:shadow-xl hover:bg-black/40 z-50">
         <a href="#home">
         <IconButton className="text-white hover:text-[#b97aff] hover:scale-110">
           <div className="flex items-center space-x-2">
@@ -68,7 +68,7 @@ function ButtonGroup() {
       </div>
 
       {/* Texto de la derecha */}
-      <div className="flex items-center justify-center p-4 invisible">
+      <div className="hidden md:flex items-center justify-center p-4 invisible">
         <h1 className="text-white text-4xl font-bold flex items-center space-x-2">
           <img src="/logo.png" className="w-[35px] h-[35px] text-[#b97aff]" />
           <span className="text-[#b97aff] text-2xl">&#123;</span>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaPhp, FaPython, FaJava, FaGitAlt, FaGithub, FaBootstrap, FaWordpress, FaFigma } from "react-icons/fa";
 import { SiCplusplus, SiMysql, SiTailwindcss, SiVite, SiElementor, SiAdobephotoshop } from "react-icons/si";
 import { MdOutlineCode } from "react-icons/md";
@@ -39,7 +39,7 @@ const categories = {
 
 function SkillTable({ categories }) {
   return (
-    <div className="w-[50%] xl:w-auto p-4 text-white bg-[#181818] rounded-lg shadow-md">
+    <div className="m-3 md:m-0 md:w-[50%] xl:w-auto p-4 text-white bg-[#181818] rounded-lg shadow-md">
       {Object.entries(categories).map(([category, skills]) => (
         <div key={category} className="mb-6">
           <h3 className="text-lg font-semibold text-violet-300 mb-2">{category}</h3>
@@ -124,18 +124,44 @@ function CodeTable() {
     );
   }
 
-function SkillSection(){
-    return(
-        <section id="skills" className="snap-start flex items-center flex-col justify-center gap-10 xl:gap-20 2xl:gap-30 text-white">
-          <div className="flex flex-col items-center justify-center w-full h-full pt-10">
-              <h1 className="text-4xl font-bold">Habilidades</h1>
-          </div>
-          <div className="flex items-center justify-center gap-10">
-            <CodeTable />
-            <SkillTable categories={categories} />
-          </div>   
-        </section>
-    );
-};
+function SkillSection() {
+  const [activeTab, setActiveTab] = useState(1);
+
+  return (
+    <section id="skills" className="snap-start flex items-center flex-col justify-center gap-10 xl:gap-20 2xl:gap-30 text-white">
+      <div className="flex flex-col items-center justify-center w-full h-full pt-10">
+        <h1 className="text-4xl font-bold">Habilidades</h1>
+      </div>
+
+      {/* Carrusel solo en móviles */}
+      <div className="flex flex-col items-center justify-center w-full md:hidden">
+        <div className="flex gap-2 mb-4">
+          <button
+            onClick={() => setActiveTab(0)}
+            className={`px-4 py-2 rounded ${activeTab === 0 ? "bg-violet-500 text-white" : "bg-slate-800 text-slate-300"}`}
+          >
+            Código
+          </button>
+          <button
+            onClick={() => setActiveTab(1)}
+            className={`px-4 py-2 rounded ${activeTab === 1 ? "bg-violet-500 text-white" : "bg-slate-800 text-slate-300"}`}
+          >
+            Skills
+          </button>
+        </div>
+        <div className="w-full flex justify-center">
+          {activeTab === 0 && <CodeTable />}
+          {activeTab === 1 && <SkillTable categories={categories} />}
+        </div>
+      </div>
+
+      {/* Vista lado a lado en desktop */}
+      <div className="hidden md:flex items-center justify-center gap-10 w-full">
+        <CodeTable />
+        <SkillTable categories={categories} />
+      </div>
+    </section>
+  );
+}
 
 export default SkillSection;

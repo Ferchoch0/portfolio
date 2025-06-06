@@ -114,7 +114,7 @@ function TopSongs() {
   }, [currentPlayingIndex]);
 
   return (
-    <section className="max-w-xl mx-auto mt-10 space-y-4 bg-white p-3 pb-4 rounded-lg">
+    <section className="hidden md: flex max-w-xl mx-auto mt-10 space-y-4 bg-white p-3 pb-4 rounded-lg">
       <h2 className="text-center text-[#1ED760] text-2xl font-bold mb-4 flex items-center justify-center gap-2">
         <FaSpotify />
         My Top Songs

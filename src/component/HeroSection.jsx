@@ -73,7 +73,7 @@ function Hero() {
       
       <div className="relative z-[10] flex flex-row justify-center items-center w-full gap-6 text-[#eeccff]">
 
-        <div className="w-1/2  xl:w-1/3 2xl:w-1/3 flex justify-center items-center">
+        <div className="hidden lg: w-1/2  xl:w-1/3 2xl:w-1/3 md:flex justify-center items-center">
           <Code />
         </div>
 

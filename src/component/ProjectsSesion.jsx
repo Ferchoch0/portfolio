@@ -100,7 +100,7 @@ function ContainerProject({
     codeLink,
   }) {
     return (
-      <div className="bg-white w-120 h-auto rounded-lg group transition-all duration-300 relative z-[10]">
+      <div className="bg-white m-3 md:m-0 md:w-120 h-auto rounded-lg group transition-all duration-300 relative z-[10]">
         <div className="flex p-2 gap-1">
           <div>
             <span className="bg-blue-500 inline-block center w-3 h-3 rounded-full"></span>
@@ -160,7 +160,7 @@ function Projects() {
       <section id="projects" className="snap-start flex flex-col items-center justify-center w-full h-full text-white relative z-[20]"> {/* Added z-index here */}
           <div className="flex flex-col items-center justify-center w-full h-full pt-10">
               <h1 className="text-4xl font-bold">Proyectos</h1>
-              <p className="text-lg text-gray-400">Aquí hay algunos de los proyectos en los que trabaje</p>
+              <p className="text-center md:text-start md:text-lg text-gray-400">Aquí hay algunos de los proyectos en los que trabaje</p>
           </div>
           <div className="min-h-screen grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-6 pt-10 text-white mb-10 place-items-center">
               {projectData.map((project, index) => (
